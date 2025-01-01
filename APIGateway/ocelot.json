@@ -1,0 +1,148 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/Account/login",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7138
+                }
+            ],
+            "UpstreamPathTemplate": "/login",
+            "UpstreamHttpMethod": [ "GET", "DELETE", "POST" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/UserService/{MethodeName}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 9002
+                }
+            ],
+            "UpstreamPathTemplate": "/Users/{MethodeName}",
+            "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Shipping/{MethodeName}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7012
+                }
+            ],
+            "UpstreamPathTemplate": "/Shipping/{MethodeName}",
+            "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Product/{MethodeName}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 9003
+                }
+            ],
+            "UpstreamPathTemplate": "/Product/{MethodeName}",
+            "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Payment/{MethodeName}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7281
+                }
+            ],
+            "UpstreamPathTemplate": "/Payment/{MethodeName}",
+            "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Orders/{MethodeName}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 9001
+                }
+            ],
+            "UpstreamPathTemplate": "/Orders/{MethodeName}",
+            "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+        },
+        {
+            "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 9002
+                }
+            ],
+            "UpstreamPathTemplate": "/user/swagger/v1/swagger.json",
+            "UpstreamHttpMethod": [ "GET" ]
+        },
+        {
+            "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7138
+                }
+            ],
+            "UpstreamPathTemplate": "/account/swagger/v1/swagger.json",
+            "UpstreamHttpMethod": [ "GET" ]
+        },
+        {
+            "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7012
+                }
+            ],
+            "UpstreamPathTemplate": "/shipping/swagger/v1/swagger.json",
+            "UpstreamHttpMethod": [ "GET" ]
+        },
+        {
+            "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 9003
+                }
+            ],
+            "UpstreamPathTemplate": "/product/swagger/v1/swagger.json",
+            "UpstreamHttpMethod": [ "GET" ]
+        },
+        {
+            "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7281
+                }
+            ],
+            "UpstreamPathTemplate": "/payment/swagger/v1/swagger.json",
+            "UpstreamHttpMethod": [ "GET" ]
+        },
+        {
+            "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 9001
+                }
+            ],
+            "UpstreamPathTemplate": "/orders/swagger/v1/swagger.json",
+            "UpstreamHttpMethod": [ "GET" ]
+        }
+    ]
+}
